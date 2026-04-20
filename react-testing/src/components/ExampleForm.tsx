@@ -57,8 +57,11 @@ function ExampleForm() {
         <div className="flex flex-col gap-4">
           {/* Email */}
           <div className="flex flex-col gap-1">
-            <label className="text-sm text-blue-700">Email</label>
+            <label htmlFor="email" className="text-sm text-blue-700">
+              Email
+            </label>
             <input
+              id="email"
               value={form.email}
               onChange={(e) => handleChange("email", e.target.value)}
               className="px-3 py-2 rounded-lg border border-blue-100 bg-white focus:outline-none focus:ring-2 focus:ring-blue-200"
@@ -67,8 +70,11 @@ function ExampleForm() {
 
           {/* Password */}
           <div className="flex flex-col gap-1">
-            <label className="text-sm text-blue-700">Password</label>
+            <label htmlFor="password" className="text-sm text-blue-700">
+              Password
+            </label>
             <input
+              id="password"
               type="password"
               value={form.password}
               onChange={(e) => handleChange("password", e.target.value)}
@@ -78,8 +84,11 @@ function ExampleForm() {
 
           {/* Confirm */}
           <div className="flex flex-col gap-1">
-            <label className="text-sm text-blue-700">Confirm password</label>
+            <label htmlFor="confirm" className="text-sm text-blue-700">
+              Confirm password
+            </label>
             <input
+              id="confirm"
               type="password"
               value={form.confirm}
               onChange={(e) => handleChange("confirm", e.target.value)}
